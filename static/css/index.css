@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    background: #201F20;
+  }
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.left,.right {
+  display: flex;
+  flex-direction: column;
+  width: 45%; /* Define un ancho para cada lado */
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-size: 4.2rem;
+}
+
+.rigth h4 {
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.rigth span {
+  font-weight: 400;
+}
