@@ -18,16 +18,28 @@
 </head>
 
 <body>
+    
     <div class="left">
-        <h1>Remueve el Fondo</h1>
-        <h1>de tu Video</h1>
+        <h1>Remueve el Fondo<br>de tu Video</h1>
         <h4>100% Automatico y <span>Gratis</span></h4>
         <video src="../static/video/homeVideo.mp4" autoplay loop muted></video>
     </div>
 
     <div class="right">
-        <button>Subir Video</button>
+        <button> <img src="/static/img/Upload.svg">Subir Video</button>
         <h4>Formatos Soportados: .mp4, .avi, .mov, .wmv</h4>
     </div>
+
+    <!-- cursor -->
+    <div class="cursor"></div>
+    
+    <script>
+        //Cursor
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+        });
+    </script>
 </body>
 </html>
